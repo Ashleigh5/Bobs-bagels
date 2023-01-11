@@ -25,5 +25,19 @@ expected = undefined;
 input = undefined;
 actual = undefined;
 result = undefined;
+stub = new Basket();
 
 
+console.log(`Test 2: 1 => ArrayIndexOutOfBounds`)  // empty array would cause problems, so...
+
+// Arrange
+expected = 0;
+input = 1;
+
+// Act
+actual = stub.removeItem(input);
+console.log(actual);
+
+// Assert
+result = assertEquals(actual, expected);
+console.log(`Test 2: 1 => ArrayIndexOutOfBounds: ${result ? `Passed` : `Failed`}`);
