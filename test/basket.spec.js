@@ -4,6 +4,7 @@ const { Item } = require("../src/item");
 
 
 let input, expected, actual, result;
+let stub = new Basket();
 
 console.log(`Test 1: new Item() => 1`)
 
@@ -12,7 +13,7 @@ expected = 1;
 input = new Item();
 
 //Act
-actual = addItem(input);
+actual = stub.addItem(input);
 console.log(actual);
 
 //Assert
