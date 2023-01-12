@@ -7,6 +7,7 @@ class BasketClass {
 
     addItem(item) {
         this.basketItems.push(item);
+        return this.basketItems.length;
     }
 
     removeItem(item) {

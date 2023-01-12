@@ -2,7 +2,6 @@
 // everything in the file 'basket' will be called 'BasketClass' in this file
 const BasketClass = require("../src/basketClass");
 const ItemClass = require("../src/itemClass");
-ItemClass
 const assertEquals = require("../test-framework");
 
 //simple test
