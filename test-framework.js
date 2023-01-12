@@ -1,5 +1,4 @@
-const assertEquals = (actualResult, expectedResult) => actualResult === expectedResult;
+const assertEquals = (actual, expected) => actual === expected;
 
-module.exports = {
-    assertEquals
-}
+
+module.exports = assertEquals;
